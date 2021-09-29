@@ -8,14 +8,13 @@ importScripts('https://www.gstatic.com/firebasejs/8.3.2/firebase-messaging.js');
 Initialize the Firebase app in the service worker by passing in the messagingSenderId.
 */
 firebase.initializeApp({
-    apiKey: 'api-key',
-    authDomain: 'project-id.firebaseapp.com',
-    databaseURL: 'https://project-id.firebaseio.com',
-    projectId: 'project-id',
-    storageBucket: 'project-id.appspot.com',
-    messagingSenderId: 'sender-id',
-    appId: 'app-id',
-    measurementId: 'G-measurement-id',
+    apiKey: "AIzaSyDxIpIel71l8uSeLD5FEpJK4oDnFzelL28",
+    authDomain: "laravelwebpushnotificationdemo.firebaseapp.com",
+    projectId: "laravelwebpushnotificationdemo",
+    storageBucket: "laravelwebpushnotificationdemo.appspot.com",
+    messagingSenderId: "801959816247",
+    appId: "1:801959816247:web:7ff051ba7765ee718e63b2",
+    measurementId: "G-QDV26ZNYPE"
 });
 
 

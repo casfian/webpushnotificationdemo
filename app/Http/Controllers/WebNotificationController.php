@@ -17,7 +17,10 @@ class WebNotificationController extends Controller
     {
         return view('home');
     }
-  
+    
+    //Note:
+    //Chrome Browser works, Safari not working becoz it can't 
+    //seem to save the Device Key from Firebase!
     public function storeToken(Request $request)
     {
         auth()->user()->update(['device_key'=>$request->token]);
@@ -68,6 +71,7 @@ class WebNotificationController extends Controller
         curl_close($ch);
 
         // FCM response
-        dd($result);        
+        //dd($result);   //if you want to debug uncomment this!     
+        return back();   
     }
 }
